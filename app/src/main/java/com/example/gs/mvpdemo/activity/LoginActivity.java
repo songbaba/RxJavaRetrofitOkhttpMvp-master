@@ -31,7 +31,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @Override
     protected void initData() {
-        ToastUtil.setToast("新建的mvp登录实例！");
+        ToastUtil.setToast("新建的mvp登录实例，进行第二次版本更新");
     }
 
     @Override
