@@ -8,6 +8,8 @@ import com.example.gs.mvpdemo.R;
 import com.example.gs.mvpdemo.base.BaseActivity;
 import com.example.gs.mvpdemo.contract.LoginContract;
 import com.example.gs.mvpdemo.presenter.LoginPresenter;
+import com.example.gs.mvpdemo.utils.ToastUtil;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -29,7 +31,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @Override
     protected void initData() {
-
+        ToastUtil.setToast("新建的mvp登录实例！");
     }
 
     @Override
