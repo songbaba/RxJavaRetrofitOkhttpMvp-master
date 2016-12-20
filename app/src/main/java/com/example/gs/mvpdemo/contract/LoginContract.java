@@ -12,6 +12,7 @@ package com.example.gs.mvpdemo.contract;
 public class LoginContract {
 
     public interface LoginView {
+
         String getUserName();
 
         String getPwd();

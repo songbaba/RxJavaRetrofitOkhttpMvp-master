@@ -4,6 +4,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+
 import com.example.gs.mvpdemo.R;
 import com.example.gs.mvpdemo.base.BaseActivity;
 import com.example.gs.mvpdemo.contract.LoginContract;
@@ -31,7 +32,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
     @Override
     protected void initData() {
-        ToastUtil.setToast("做事不能带感情");
+        ToastUtil.setToast("做事不能带感情！，");
     }
 
     @Override
@@ -74,7 +75,13 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
         toast(failMsg);
     }
 
-
+    /**
+     * 判断账号不能为空
+     * 如果为空则显示账号不能为空
+     * 如果不为空则显示密码不能为空
+     *
+     * @return
+     */
     public boolean checkNull() {
         boolean isNull = false;
         if (TextUtils.isEmpty(getUserName())) {

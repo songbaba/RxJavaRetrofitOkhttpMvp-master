@@ -34,8 +34,6 @@ public abstract class CommonSubscriber<T> extends BaseSubscriber<T> {
         }
     }
 
-
-
     @Override
     protected void onError(ApiException e) {
         LogUtils.e(TAG, "错误信息为 " + "code:" + e.code + "   message:" + e.message);
